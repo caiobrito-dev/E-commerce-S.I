@@ -2,7 +2,7 @@ body{
     margin: 0px;
 }
 
-.fora{
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,17 +27,41 @@ body{
     background: rgb(184, 184, 184);
 }
 
-.quadrado{
+.produto{
     width: 300px;
     height: 400px;
     border: 15px solid lightgrey;
     background: rgb(184, 184, 184);
     transition: box-shadow 700ms, rotate 700ms, border 700ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
 }
-.quadrado:hover{
+
+.produto:hover{
     border: 15px solid black;
     rotate: x 5deg;
     box-shadow: 0px 10px 20px gray;
+}
+
+.nome{
+    font-size: x-large;
+    transition: 700ms;
+}
+
+.produto:hover .nome{
+    transform: translateY(10px);
+}
+
+.preco{
+    padding-bottom: 30px;
+    font-size: x-large;
+    transition: 700ms;
+}
+
+.produto:hover .preco{
+    transform: translateY(-1rem);
 }
 
 .rodapé{
@@ -46,4 +70,14 @@ body{
     background: gray;
     margin-top: 200px;
     bottom: 0px;
+}
+
+.linha_rodape{
+    border-right: 1px solid black;
+    width: 100px;
+    height: 310px;
+    position: absolute;
+    top: 156%;
+    bottom: 0;
+    left: 50%;
 }

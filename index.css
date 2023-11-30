@@ -68,6 +68,16 @@ button{
     margin-bottom: 30px;
 }
 
+.pagina_pagamento{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(155, 155, 155);
+}
+
 .rodapé{
     width: 100%;
     height: 40vh;

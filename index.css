@@ -41,7 +41,7 @@ body{
 
 .produto:hover{
     border: 15px solid black;
-    rotate: x 5deg;
+    rotate: x 2deg;
     box-shadow: 0px 10px 20px gray;
 }
 
@@ -51,17 +51,21 @@ body{
 }
 
 .produto:hover .nome{
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
 
 .preco{
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     font-size: x-large;
     transition: 700ms;
 }
 
 .produto:hover .preco{
-    transform: translateY(-1rem);
+    transform: translateY(-8px);
+}
+
+button{
+    margin-bottom: 30px;
 }
 
 .rodapé{

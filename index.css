@@ -73,10 +73,13 @@ button{
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 900px;
+    height: 700px;
     background-color: rgb(155, 155, 155);
+    flex-direction: column;
+
 }
+
 
 .rodapé{
     width: 100%;

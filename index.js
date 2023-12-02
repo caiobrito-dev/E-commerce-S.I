@@ -31,21 +31,17 @@ $(document).ready(function(){
                 
         /* Descobrindo a id do produto */
         let produto_escolhido = $(this).attr("id")
-        alert(produto_escolhido)
 
         /* Descobrindo o nome do produto e sua descrição*/
         let chaves = Object.keys(produtos)
         let nome_produto = nomes[chaves.indexOf(produto_escolhido)]
-        alert(nome_produto)
         let descricao = descriçoes[chaves.indexOf(produto_escolhido)]
-        alert(descricao)
         let preco = 0
 
         /* Percorrendo objeto para encontrar o preco */
         $.each(produtos, function(key, value){
             if(key == produto_escolhido){
                 preco = value
-                alert(preco)
             }
         });
 

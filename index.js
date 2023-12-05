@@ -19,11 +19,11 @@ $(document).ready(function(){
 
     let descriçoes = [
         "Ganhe mil milhoes por segundo",
-        "Descrição do produto: camisa do flamengo toda fudida usada pelo\ngustavo geladeira no jogo contra o corinthians até ele tirar e ser expulso\nda partida. Flamengo ganhou a partida por 7x1",
-        "ps5 edicao de colecionador feito de ouro de 24 quilates",
-        "copo com água do rio ipiranga do momento que o dom pedro segundo declarou a independencia do brasil",
-        "bomba atomica que nao foi solta pelo robert openheimer assim evitando a morte de milhoes de pessoas",
-        "cartaozinho de UMA (1) unidade de refeição do RU lago"
+        "Descrição do produto: camisa do Flamengo toda fudida usada pelo\nGustavo Geladeira no jogo contra o corinthians até ele tirar e ser expulso\nda partida. Flamengo ganhou a partida por 7x1",
+        "PS5 edição de colecionador feito de ouro de 24 quilates",
+        "Copo com água do Rio Ipiranga do momento que o Dom Pedro segundo declarou a independencia do brasil",
+        "Bomba atomica que não foi solta pelo robert openheimer assim evitando a morte de milhões de pessoas",
+        "Cartaozinho de UMA (1) unidade de refeição do RU lago"
 
     ]
 
@@ -46,10 +46,43 @@ $(document).ready(function(){
         });
 
         $("#nome_produto").text(nome_produto)
+        $("#descricao").text(descricao)
+
+
+        /* Verficando qual o tipo do pagamento */
+
+        $(".tipo").click(function(){
+            let tipo_pagamento = $(this).attr("id")
+            
+            if (tipo_pagamento == "pix"){
+                if($(".dados_comprador_cartao").is(":visible")){
+                    $(".dados_comprador_cartao").hide()
+                }
+
+                let dados_pix = $(".dados_comprador_pix")
+                dados_pix.show()
+            }
+            else{
+                if($(".dados_comprador_pix").is(":visible")){
+                    $(".dados_comprador_pix").hide()
+                }
+                let dados_cartao = $(".dados_comprador_cartao")
+                dados_cartao.show()
+            }
+        })
 
 
         /* Ocultando e visualizando a div */
         if($(".pagina_pagamento").is(":visible")){
+
+            if($(".dados_comprador_pix").is(":visible")){
+                $(".dados_comprador_pix").hide()
+            }
+            if($(".dados_comprador_cartao").is(":visible")){
+                $(".dados_comprador_cartao").hide()
+            }
+
+            $("input[name='pagamento']").prop("checked", false);
             $(".pagina_pagamento").hide()
         }else
             var pagina_pagamento = $(".pagina_pagamento")
@@ -57,4 +90,5 @@ $(document).ready(function(){
             pagina_pagamento.css("display", "flex")
         
     })
+    
 })

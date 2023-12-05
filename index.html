@@ -58,8 +58,29 @@
         </div>
         
         <div class="pagina_pagamento">
-            <h1 id="nome_produto"></h1>
-            <button class="compra" id="fechou">fechar</button>
+            <div class="botao_sair"><button class="compra" id="fechou">fechar</button></div>
+
+            <div class="informacoes_compra">
+                <h1 id="nome_produto"></h1>
+                <p id="descricao"></p>
+            </div>
+
+            <div class="imagem_compra"></div>
+
+            <div class="informacoes_pagamento">
+                
+                <h2>Forma de Pagamento: </h2>
+                <p><input type="radio" name="pagamento" class="tipo" id="cartao">Cartão de Crédito  <input type="radio" class="tipo" name="pagamento" id="pix">PIX</p>
+
+                <div class="dados_comprador_pix">
+                    Nome: <input type="text">
+                    CPF: <input type="number" name="" id="">
+                </div>
+                <div class="dados_comprador_cartao">
+                    Nome: <input type="text">
+                    Número cartão <input type="text">
+                </div>
+            </div>
         </div>
 
     </div>

@@ -1,7 +1,7 @@
 $(document).ready(function(){
     let produtos = {
-        ebook : 5.50,
-        camisa : 15000,
+        ebook : 0.50,
+        camisa : 15000.00,
         ps5: 5.55,
         agua : 0,
         bomba : 0,
@@ -29,6 +29,25 @@ $(document).ready(function(){
 
     $(".compra").click(function(){
                 
+        /* Ocultando e visualizando a div */
+        if($(".pagina_pagamento").is(":visible")){
+
+            if($(".dados_comprador_pix").is(":visible")){
+                $(".dados_comprador_pix").hide()
+            }
+            if($(".dados_comprador_cartao").is(":visible")){
+                $(".dados_comprador_cartao").hide()
+            }
+
+            $("input[name='pagamento']").prop("checked", false);
+            $(".pagina_pagamento").hide()
+        }else
+            var pagina_pagamento = $(".pagina_pagamento")
+            pagina_pagamento.show()
+            pagina_pagamento.css("display", "flex")
+
+
+
         /* Descobrindo a id do produto */
         let produto_escolhido = $(this).attr("id")
 
@@ -36,17 +55,12 @@ $(document).ready(function(){
         let chaves = Object.keys(produtos)
         let nome_produto = nomes[chaves.indexOf(produto_escolhido)]
         let descricao = descriçoes[chaves.indexOf(produto_escolhido)]
-        let preco = 0
-
-        /* Percorrendo objeto para encontrar o preco */
-        $.each(produtos, function(key, value){
-            if(key == produto_escolhido){
-                preco = value
-            }
-        });
+        let preco = produtos[produto_escolhido]
+        
 
         $("#nome_produto").text(nome_produto)
         $("#descricao").text(descricao)
+        $("#preco_tela_pagamento").text("Preço: R$ "+preco.toFixed(2))
 
 
         /* Verficando qual o tipo do pagamento */
@@ -70,24 +84,6 @@ $(document).ready(function(){
                 dados_cartao.show()
             }
         })
-
-
-        /* Ocultando e visualizando a div */
-        if($(".pagina_pagamento").is(":visible")){
-
-            if($(".dados_comprador_pix").is(":visible")){
-                $(".dados_comprador_pix").hide()
-            }
-            if($(".dados_comprador_cartao").is(":visible")){
-                $(".dados_comprador_cartao").hide()
-            }
-
-            $("input[name='pagamento']").prop("checked", false);
-            $(".pagina_pagamento").hide()
-        }else
-            var pagina_pagamento = $(".pagina_pagamento")
-            pagina_pagamento.show()
-            pagina_pagamento.css("display", "flex")
         
     })
     

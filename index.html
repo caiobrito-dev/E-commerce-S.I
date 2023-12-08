@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="" type="image/x-icon"> <!--Iconezinho ali de cima-->
     <title>E-commerce</title>
 </head>
 <body>
-    
     <div class="cabeçalho">
         <img class="logo" src="/imgs/code store.png">
         <img class="user" src="imgs/user.png">
@@ -57,36 +57,49 @@
             </div>
         </div>
         
-        <div class="pagina_pagamento">
-            <div class="escurece"></div>
+        <div class="escurece">
+            <div class="pagina_pagamento">
 
-            <button class="compra" id="fechou">X</button>
-            
-            <div class="informacoes_compra">
-                <div class="pagamento_emcima">
-                    <h2 id="nome_produto"></h2>
-                    <p id="descricao"></p>
-                    <strong><p id="preco_tela_pagamento">Preço:</p></strong>
-                </div>
-                <div class="pagamento_embaixo">
-                    <p>Método de Pagamento:</p>
-                    <p><input type="radio" name="pagamento" class="tipo" id="cartao">Cartão de Crédito  <input type="radio" class="tipo" name="pagamento" id="pix">Pix</p>
-                </div>
-            </div>
-            
-            <div class="imagem_compra"></div>
-            
-            <div class="informacoes_pagamento">
+                <button class="compra" id="fechou">X</button>
                 
-                <div class="dados_comprador_pix">
-                    Nome: <input type="text">
-                    CPF: <input type="number" name="" id="">
+                <div class="informacoes_compra">
+                    <div class="pagamento_emcima">
+                        <h2 id="nome_produto"></h2>
+                        <p id="descricao"></p>
+                        <strong><p id="preco_tela_pagamento">Preço:</p></strong>
+                    </div>
+                    <div class="pagamento_embaixo">
+                        <p>Método de Pagamento:</p>
+                        <p><input type="radio" name="pagamento" class="tipo" id="cartao">Cartão de Crédito  <input type="radio" class="tipo" name="pagamento" id="pix">Pix</p>
+                    </div>
                 </div>
+                
+                <div class="imagem_compra"></div>
+                
+                <div class="informacoes_pagamento">
+                    
+                    <div class="dados_comprador_pix">
+                        Nome: <input type="text" placeholder="NOME" id="nome_comprador">
+                        CPF: <input type="text" name="" id="cpf_comprador" placeholder="CPF">
+                        <p id="aviso_cpf"></p>
+                    </div>
 
-                <div class="dados_comprador_cartao">
-                    Nome: <input type="text">
-                    Número cartão <input type="text">
+                    <div class="dados_comprador_cartao">
+                        Nome: <input type="text" placeholder="NOME" id="nome_comprador">
+                        Número cartão <input type="text" placeholder="0000 0000 0000 0000" id="num_cartao">
+                        Validade do cartao <input type="text" placeholder="XX/XX/XX" id="validade_cartao">
+                        Codigo de segurança <input type="text" placeholder="XXX" id="cvc_cartao">
+                        Parcela <select name="parcela" id="" aria-placeholder="laalala">
+                            <option value="" id="sem_parcela"></option>
+                            <option value="" id="parcela_2x"></option>
+                            <option value="" id="parcela_3x"></option>
+                            <option value="" id="parcela_4x"></option>
+                            <option value="" id="parcela_5x"></option>
+                        </select>
+                    </div>
+                    <button id="finalizar_compra">Finalizar compra</button>
                 </div>
+                
             </div>
         </div>
 
@@ -98,6 +111,6 @@
         <div class="lado_rodape">Tiago Pinheiro Corpes
         </div>
     </div>
-
+    
 </body>
 </html>

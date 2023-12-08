@@ -28,9 +28,9 @@ $(document).ready(function(){
     ]
 
     $(".compra").click(function(){
-                
+
         /* Ocultando e visualizando a div */
-        if($(".pagina_pagamento").is(":visible")){
+        if($(".escurece").is(":visible")){
 
             if($(".dados_comprador_pix").is(":visible")){
                 $(".dados_comprador_pix").hide()
@@ -40,50 +40,97 @@ $(document).ready(function(){
             }
 
             $("input[name='pagamento']").prop("checked", false);
-            $(".pagina_pagamento").hide()
+            $(".escurece").hide()
         }else
-            var pagina_pagamento = $(".pagina_pagamento")
-            pagina_pagamento.show()
-            pagina_pagamento.css("display", "flex")
+            var pagina_escurece = $(".escurece")
+            if (pagina_escurece != undefined){
+                pagina_escurece.css("display", "flex")
+            }
+           
 
 
+            /* Descobrindo a id do produto */
+            let produto_escolhido = $(this).attr("id")
 
-        /* Descobrindo a id do produto */
-        let produto_escolhido = $(this).attr("id")
-
-        /* Descobrindo o nome do produto e sua descrição*/
-        let chaves = Object.keys(produtos)
-        let nome_produto = nomes[chaves.indexOf(produto_escolhido)]
-        let descricao = descriçoes[chaves.indexOf(produto_escolhido)]
-        let preco = produtos[produto_escolhido]
-        
-
-        $("#nome_produto").text(nome_produto)
-        $("#descricao").text(descricao)
-        $("#preco_tela_pagamento").text("Preço: R$ "+preco.toFixed(2))
-
-
-        /* Verficando qual o tipo do pagamento */
-
-        $(".tipo").click(function(){
-            let tipo_pagamento = $(this).attr("id")
+            /* Descobrindo o nome do produto e sua descrição*/
+            let chaves = Object.keys(produtos)
+            let nome_produto = nomes[chaves.indexOf(produto_escolhido)]
+            let descricao = descriçoes[chaves.indexOf(produto_escolhido)]
+            let preco = produtos[produto_escolhido]
             
-            if (tipo_pagamento == "pix"){
-                if($(".dados_comprador_cartao").is(":visible")){
-                    $(".dados_comprador_cartao").hide()
-                }
 
-                let dados_pix = $(".dados_comprador_pix")
-                dados_pix.show()
+            $("#nome_produto").text(nome_produto)
+            $("#descricao").text(descricao)
+            if(preco != undefined){
+                $("#preco_tela_pagamento").text("Preço: R$ "+preco.toFixed(2))
             }
-            else{
-                if($(".dados_comprador_pix").is(":visible")){
-                    $(".dados_comprador_pix").hide()
+
+
+            /* Verficando qual o tipo do pagamento */
+
+            $(".tipo").click(function(){
+                let tipo_pagamento = $(this).attr("id")
+
+                if (tipo_pagamento == "pix"){
+                    
+                    /* PAGAMENTO POR PIX */ 
+
+                    if($(".dados_comprador_cartao").is(":visible")){
+                        $(".dados_comprador_cartao").hide()
+                    }
+                    let dados_pix = $(".dados_comprador_pix")
+                    dados_pix.show()
+
+                    /* Verificando dados do cpf */
+                    $("#cpf_comprador").mask('000.000.000-00')
+                    $("#cpf_comprador").on("keyup", function(){
+                        let cpf = $("#cpf_comprador").val()
+                        if(cpf.length < 14 && cpf.length > 0){
+                            $("#aviso_cpf").text("Falta numero")
+                        }
+                        else{
+                            $("#aviso_cpf").text("")
+                        }
+                    })
+
+                    $("#finalizar_compra").click(function(){
+                        let cpf = $("#cpf_comprador").val()
+                        if($("#nome_comprador").val() != "" && cpf.length == 14){
+                            alert("comprou")
+                        }
+                    }) 
                 }
-                let dados_cartao = $(".dados_comprador_cartao")
-                dados_cartao.show()
-            }
-        })
+                else{
+
+                    /* PAGAMENTO POR CARTAO */ 
+
+                    if($(".dados_comprador_pix").is(":visible")){
+                        $(".dados_comprador_pix").hide()
+                    }
+                    let dados_cartao = $(".dados_comprador_cartao")
+                    dados_cartao.show()
+
+                    $("#validade_cartao").mask("00/00/00")
+                    $("#cvc_cartao").mask("000")
+                    $("#num_cartao").mask("0000 0000 0000 0000")
+                    $("#sem_parcela").text("1X de: R$ " + preco)
+                    $("#parcela_2x").text("2X sem juros de: R$ " + (preco/2).toFixed(2)) 
+                    $("#parcela_3x").text("3X sem juros de: R$ " + (preco/3).toFixed(2)) 
+                    $("#parcela_4x").text("4X com juros de: R$ " + (preco/4 + (preco/100 * 3)).toFixed(2)) 
+                    $("#parcela_5x").text("5X com juros de: R$ " + (preco/5 + (preco/100 * 3)).toFixed(2)) 
+
+                    
+                    $("#finalizar_compra").click(function(){
+                        let cvc = $("#cvc_cartao").val().length
+                        let num = $("#num_cartao").val().length
+                        let val = $("#validade_cartao").val().length
+
+                        if($("#nome_comprador").val() != "" && cvc == 3 && num == 19 & val == 8){
+                            alert("comprou")
+                        }
+                    }) 
+                }
+            })
         
     })
     

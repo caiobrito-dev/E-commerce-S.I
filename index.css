@@ -16,6 +16,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 50px 0;
+    gap: 50px;
 }
 
 .fileira{
@@ -23,8 +25,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    gap: 100px;
+    gap: 50px;
     perspective: 1000px; 
 }
 
@@ -38,7 +39,7 @@ body{
     border: 10px solid white;
     border-radius: 2%;
     background: white;
-    transition: 600ms;
+    transition: 600ms ease-out;
 }
 
 .produto:hover{
@@ -47,8 +48,8 @@ body{
     box-shadow: 0px 10px 15px gray;
 }
 
-.nome, .preco, .compra{
-    transition: 600ms;
+.nome, .preco, .compra, #finalizar_compra{
+    transition: 600ms ease-out;
 }
 
 .nome{
@@ -59,7 +60,7 @@ body{
     font-size: 26px;
 }
 
-.compra{
+.compra, #finalizar_compra{
     margin-bottom: 10%;
     padding: 8px 48px;
     cursor: pointer;
@@ -69,12 +70,25 @@ body{
     border: transparent;
 }
 
-.compra:hover{
+.compra:hover, #finalizar_compra:hover{
     scale: 1.1;
 }
 
 .produto:hover .preco, .produto:hover .nome, .produto:hover .compra{
     transform: translateY(-4px);
+}
+
+.produto:hover .imagem{
+    transform: translateY(-8px);
+}
+
+.produto:hover .imagem{
+    scale: 1.1
+}
+
+.imagem{
+    height: 150px;
+    transition: 600ms ease-out;
 }
 
 .cabeçalho{
@@ -86,9 +100,8 @@ body{
 }
 
 .rodape{
-    margin-top: 100px;
     width: 100%;
-    height: 30vh;
+    height: 15vh;
     background: rgb(64, 64, 64);
     display: flex;
     align-items: center;
@@ -106,6 +119,12 @@ body{
     height: 80%;
     border-radius: 20%;
     background: lightgray;
+}
+
+.rodape img{
+    height: 25px;
+    filter: invert(100%);
+    margin: 0px 0px -4px 10px;
 }
 
 .logo{
@@ -129,7 +148,8 @@ body{
     top: 20vh;
     width: 60vw;
     height: 60vh;
-    background-color: rgb(190, 190, 190);
+    border-radius: 0.5%;
+    background-color: white;
     font-size: 22px;
 }
 
@@ -185,9 +205,12 @@ body{
     height: 100vh;
     width: 100%;
     position: fixed;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     top: 0px;
     justify-content: center;
     align-items: center;
 }
 
+.finaliza{
+    padding-top: 5%;
+}

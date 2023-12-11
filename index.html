@@ -108,7 +108,9 @@
                     </div>
                 </div>
                 
-                <div class="imagem_compra"></div>
+                <div class="imagem_compra">
+                    <div class="imagem_compra_flex"></div>
+                </div>
                 
                 <div class="informacoes_pagamento">
                     
@@ -123,16 +125,18 @@
 
                     <div class="dados_comprador_cartao">
                         Nome: <input type="text" placeholder="NOME" id="nome_comprador_cartao">
-                        Número cartão <input type="text" placeholder="0000 0000 0000 0000" id="num_cartao">
-                        Validade do cartao <input type="text" placeholder="XX/XX/XX" id="validade_cartao">
-                        Codigo de segurança <input type="text" placeholder="XXX" id="cvc_cartao">
-                        Parcela <select name="parcela" id="" aria-placeholder="laalala">
-                            <option value="" id="sem_parcela"></option>
-                            <option value="" id="parcela_2x"></option>
-                            <option value="" id="parcela_3x"></option>
-                            <option value="" id="parcela_4x"></option>
-                            <option value="" id="parcela_5x"></option>
-                        </select>
+                        Número cartão: <input type="text" placeholder="0000 0000 0000 0000" id="num_cartao" class="cartao"> <img src="" alt="" class="bandeira_cartao">
+                        Validade cartão: <input type="text" placeholder="XX/XX/XX" id="validade_cartao" class="validade">
+                        CVV: <input type="text" placeholder="XXX" id="cvc_cartao" class="cvv">
+                        <p>
+                            Parcela: <select name="parcela" id="" aria-placeholder="laalala">
+                                <option value="" id="sem_parcela"></option>
+                                <option value="" id="parcela_2x"></option>
+                                <option value="" id="parcela_3x"></option>
+                                <option value="" id="parcela_4x"></option>
+                                <option value="" id="parcela_5x"></option>
+                            </select>
+                        </p>
                         <div class="finaliza">
                             <button id="finalizar_compra_cartao" class="finalizar_compra">Finalizar compra</button>
                         </div>

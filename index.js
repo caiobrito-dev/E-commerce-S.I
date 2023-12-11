@@ -30,12 +30,12 @@ $(document).ready(function(){
         "Camisa do Flamengo toda fudida usada pelo Gustavo Geladeira no jogo contra o corinthians até ele tirar e ser expulso da partida. Flamengo ganhou a partida por 7x1",
         "PS5 edição de colecionador feito de ouro de 24 quilates",
         "Meteriorito saído da província lunar de marte que caiu em Caibaté e acabou tirando a vida de 2 indivíduos",
-        "Impala turbo com Turbina Holset HX-35, Válvula de Alívio SPA Compact, Intercooler frontal,Pressurização em Alumínio 2,5,Escape 2,5 com 1 abafador JK, Pistões IASA 87mm (p/ 700cv), Bielas K1 (p/ 700cv), Parafusos ARP, Anéis NPR, Blockguard, Bomba de Óleo GM 2.4 16v retrabalhada e junta de cabeçote de aço de Astra Flex.",
+        "Impala turbo com Turbina Holset HX-35, Válvula de Alívio SPA Compact, Intercooler frontal,Pressurização em Alumínio 2,5,Escape 2,5 com 1 abafador JK",
         "Copo com água do Rio Ipiranga do momento que o Dom Pedro segundo declarou a independencia do brasil",
         "Bomba atomica que não foi solta pelo robert openheimer assim evitando a morte de milhões de pessoas",
         "Cartaozinho de UMA (1) unidade de refeição do RU lago",
         "Um saco de argamassa.",
-        "บ̭̺̩ͬ̌ͧา̆̆บ̻͙̞ͮ̿̈ิ̸̯̫̝โ͏̖̺̗ล̔ͮนเ̉̕ร̕ิ่̡̙ม̴ส̍̑͒ง҉ค͠ร̹̤́า̡̦͎̖ม̸ก͙̈́̕ั̳̭̯บบา̈͊̑บ̰̍ิ͘โͭ͊ลน̘͙͡ͅ ̷̃̾̂บ̲̌̀า̹͕̇ͩบ͈͗ͪͅี̭ ̰͉̦́̉̉โ̛̈ͨ̚ม̶̝̓เ̒̍̐͠ลกช̜͓ͪͣน̡̠̺͕ะ҉ ͍́ดอน͚̈ ว̖̮̒̂ร้̢̞͓ͯ̈́͊̄͌า̧̤̫ย͘ ͢ก͠า͊̿̀ร͓̣̅̽̈͟ͅคͩ͝ม̥̔ ̅ล̤̳͖าย̸͉͎̾ͮ ͆บ͍͢า̝̣̻̿̏̌บ̼̹̔̇́ิโ̗ͪล̅͂̚น̼͍͙ ̢̝̺̺ͥ͋̂ก̍ ͎̗̋̂͞น̛͕̹̞ ͦ͏̣ส̳̅ง̷͚̻͉̈́̏̈ครา̭̟̏̍ม̮̤̦ใ̈น̯̐͠เป̰̰̇̃็̶͔̌น̞ͦ ค̦͉̳͑̑͐ว̴า̅͗҉ม̈́จ͠ร̰͊ิ͏ง ̱̫͉͜แ̴̬ค̩̍͘น̣͗̀าด̦̖̹̃̾ͮ ̎̈́̈ร̻า̛̝͓̫̑́̿คͤ̅҉ุ͕̻ณ̡̣̮̽͋เ͖̅ห̥̤̠͜ม͇̦̊̍ื̛̒อ͘น͝ว̼̗ั͟ว͉͇̜ ก̗͎ร̓̽̕ะ̠̝ท̵ิͭง̣͖̮ ̴̭͙͍พ̢̝͕̹ร̵̳̹̓ͨะ̓̂̊เ̩͔͇̈́̃̍จ้̢ͦ͟า ว่̥̝̽̇อ̫̜̟̏̽̃͝ง̥͇̜͊͑͗ไ͝ห้̣ͫใ̰̖̏͆ห้̟̻̲̦̑̈́͒̈́ก̟̞͕ั̜̪̼ͣ͐͑บ̳̭ͥͩว̷̮͙ิ̡ͦ̒ญ̩̣́̔ญ̜͚ͨ͆̈́ͅา͙͠ณ҉ ห̱̭̺͟ล͊ง͞ท̨͚̽า̸̳͇ง̫ข͢องคุ̥̳̖̲̂͢ณ̨ ͇̌͠ก͕̰̹ค้̇͢͜า̠̖ͬͦข̤̩̂̇͘อ̜̻̞͂ͦ̀̚ง̴พวͯͫก̵̠̜̟เข̸̦ͯ̎́ͅͅา̼̟̻ͪ̉͆คื̦̮̒ͤอ̩̱̺̓̎̅ผู้͓͉͇̰̗̈́͒͟ ̱̗̠ͮͮ͒̕แ̙͎ล̴ะ҉ผู้͕̠͕̤̝ͦ͊ͨ̋̔บ่̥͉̘ͫ̀̌͜า҉ข̢อ̱͂̇ͅงพ̸͈̰̗̿̃̀ว͐ͦ҉̗̺ก̖̲̤ͬ̋̅͘เ̳ข͌͋า̲̹͂ͧข้̥̩͂͠า̹͈̲ͨ̉̆͡ง͎ͣ͞ fṕp̨̖̱̫̔ͮ̚ ̧̰̙̑ͪอมู́̉ͮลเก̗ͩี̴่̞͔̫̯́ͥ̈̊ย̠̘́ͭว̘̓กั̭̓บ̢̞̩̱̇̈ͮงู̗̳̟ͬ̍̑͡ ̒̈́ที̥͎̝ ̲̩̣͊ͨͨเก̡ี่̤̤̔ͬ̀̕ย͏̪ว̦ͮข้̹̣͇̂͆̓ͭ͌อͮ̑ͨ͝ง̗?̿ ͑ͅน͔ͧั̷̺͓̩̌ͤ̿ก͓̟̤ͣ̄̋ว̥ͤ͡ิ̛̲̼͈ทย̳̼̦́ͧͬา͍̟̙̇ͥ̍ศͨ͐ͯาส̶̝ͮต͕̳ร̜̖́หา͙̫͝ͅยไ̵ป̼͎͚͠ไห̙̚͠น?̺͎͍ ̥͈พ̖̩̋̓ว̬̻ก̶͉͎เ̖ข̵̍͐า͍̳̆̂ถ̗̼̒̚าม̀ว่͚̦̺͈͕ͨͩ͆͊́า̬̅ศ̰̘พ̼̘̼ห̦̥͡า͔͖̤ย̺̩̱͐͂͐͘ไ͓͍ป̐ไ̷หͤน̣̙͕̋̒͒͠ ͯคุ̺͕̭ͩ̕̚ณภ̭̺̟า̔̀́҉ ͡",
+        "บ̭̺̩ͬ̌ͧา̆̆บ̻͙̞ͮ̿̈ิ̸̯̫̝โ͏̖̺̗ล̔ͮนเ̉̕ร̕ิ่̡̙ม̴ส̍̑͒ง҉ค͠ร̹̤́า̡̦͎̖ม̸ก͙̈́̕ั̳̭̯บบา̈͊̑บ̰̍ิ͘โͭ͊ลน̘͙͡ͅ ̷̃̾̂บ̲̌̀า̹͕̇ͩบ͈͗ͪͅี̭ ̰͉̦́̉̉โ̛̈ͨ̚ม̶̝̓เ̒̍̐͠ลกช̜͓ͪͣน̡̠̺͕ะ҉ ͍́ดอน͚̈ ว̖̮̒̂ร้̢̞͓ͯ̈́͊̄͌า̧̤̫ย͘ ͢ก͠า͊̿̀ร͓̣̅̽̈͟ͅคͩ͝ม̥̔ ̅ล̤̳͖าย̸͉͎̾ͮ ͆บ͍͢า̝̣̻̿̏̌บ̼̹̔̇́ิโ̗ͪล̅͂̚น̼͍͙ ̢̝̺̺ͥ͋̂ก̍ ͎̗̋̂͞น̛͕̹̞ ͦ͏̣ส̳̅ง̷͚̻͉̈́̏̈ครา̭̟̏̍ม̮̤̦ใ̈น̯̐͠เป̰̰̇̃็̶͔̌น̞ͦ ค̦͉̳͑̑͐ว̴า̅͗҉ม̈́จ͠ร̰͊ิ͏ง ̱̫͉͜แ̴̬ค̩̍͘น̣͗̀าด̦̖̹̃̾ͮ ̎̈́̈ร̻า̛̝͓̫̑́̿คͤ̅҉ุ͕̻ณ̡̣̮̽͋เ͖̅ห̥̤̠͜ม͇̦̊̍ื̛̒อ͘น͝ว̼̗ั͟ว͉͇̜ ก̗͎ร̓̽̕ะ̠̝ท̵ิͭง̣͖̮ ̴̭͙͍พ̢̝͕̹ร̵̳̹̓ͨะ̓̂̊เ̩͔͇̈́̃̍จ้̢ͦ͟า ว่̥̝̽̇อ̫̜̟̏̽̃͝ง̥͇̜͊͑͗ไ͝ห้̣ͫใ̰̖̏͆ห้̟̻̲̦̑̈́͒̈́ก̟̞͕ั̜̪̼ͣ͐͑บ̳̭ͥͩว̷̮͙ิ̡ͦ̒ญ̩̣́̔ญ̜͚ͨ͆̈́ͅา͙͠ณ҉ ห̱̭̺͟ล͊ง͞ท̨͚̽า̸̳͇ง̫ข͢องคุ̥̳̖̲̂͢ณ̨ ҉ ͡",
 
     ]
 
@@ -62,12 +62,19 @@ $(document).ready(function(){
             }
             if($(".dados_comprador_cartao").is(":visible")){
                 $(".dados_comprador_cartao").hide()
+                $(".bandeira_cartao").attr("src", "")
+                $("#cvc_cartao").val("")
+                $("#num_cartao").val("")
+                $("#validade_cartao").val("")
+                $("#nome_comprador_cartao").val("")  
+
             }
 
             $("input[name='pagamento']").prop("checked", false);
             $(".escurece").hide()
 
-            $(".imagem_compra img").remove()
+            $(".imagem_compra_flex img").remove()
+
 
         
         }else
@@ -88,11 +95,13 @@ $(document).ready(function(){
             let preco = produtos[produto_escolhido]
             let imagem_produto = $("<img>")
             imagem_produto.attr("src", imagens[produto_escolhido])
-            $(".imagem_compra").append(imagem_produto)
+            $(".imagem_compra_flex").append(imagem_produto)
+            if (preco == 395000){
+                $(".imagem_compra img").css("height", "250px")
+            }
 
             $("#nome_produto").text(nome_produto)
             $("#descricao").text(descricao)
-            $(".imagem_compra").append(imagem_produto)
             if(preco != undefined){
                 $("#preco_tela_pagamento").text("Preço: R$ "+preco.toFixed(2))
             }
@@ -112,6 +121,7 @@ $(document).ready(function(){
                         $("#num_cartao").val("")
                         $("#validade_cartao").val("")
                         $("#nome_comprador_cartao").val("")
+                        $(".bandeira_cartao").attr("src", "")
                         $(".dados_comprador_cartao").hide()
                     }
                     let dados_pix = $(".dados_comprador_pix")
@@ -132,7 +142,7 @@ $(document).ready(function(){
                     $("#finalizar_compra_pix").click(function(){
                         let cpf = $("#cpf_comprador").val()
                         if($("#nome_comprador_pix").val() != "" && cpf.length == 14){
-                            alert("comprou")
+                            alert("Sua compra foi realizada com sucesso! :)")
                             $("#nome_comprador_pix").val("")
                             $("#cpf_comprador").val("")                     
                         }
@@ -159,19 +169,21 @@ $(document).ready(function(){
                     $("#parcela_4x").text("4X com juros de: R$ " + (preco/4 + (preco/100 * 3)).toFixed(2)) 
                     $("#parcela_5x").text("5X com juros de: R$ " + (preco/5 + (preco/100 * 3)).toFixed(2)) 
 
+
                     $("#num_cartao").on("keyup", function(){
                         let num = $("#num_cartao").val()
                         if(num.slice(0,2) > 50 && num.slice(0,2) < 56){
-                            alert("mastercard")
+                            $(".bandeira_cartao").attr("src", "imgs/mastercard.png")
                         }
                         if(num[0] == 4){
-                            alert("visa")
+                            $(".bandeira_cartao").attr("src", "imgs/visa.webp")
                         }
                         if (num[0] == 6){
-                            alert("elo")
+                            $(".bandeira_cartao").attr("src", "imgs/elo.png")
                         }
-                    
-                        
+                        if (num == ""){
+                            $(".bandeira_cartao").attr("src", "")
+                        }
                     })
 
                     
@@ -181,11 +193,13 @@ $(document).ready(function(){
                         let val = $("#validade_cartao").val().length
 
                         if($("#nome_comprador_cartao").val() != "" && cvc == 3 && num == 19 && val == 8){
-                            alert("comprou")
+                            alert("Sua compra foi realizada com sucesso! :)")
                             $("#cvc_cartao").val("")
                             $("#num_cartao").val("")
                             $("#validade_cartao").val("")
-                            $("#nome_comprador_cartao").val("")                            
+                            $("#nome_comprador_cartao").val("")   
+                            $(".bandeira_cartao").attr("src", "")
+                         
                         }        
                            
                     }) 

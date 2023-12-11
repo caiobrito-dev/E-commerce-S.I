@@ -60,7 +60,7 @@ body{
     font-size: 26px;
 }
 
-.compra, #finalizar_compra{
+.compra, .finalizar_compra{
     margin-bottom: 10%;
     padding: 8px 48px;
     cursor: pointer;
@@ -70,7 +70,7 @@ body{
     border: transparent;
 }
 
-.compra:hover, #finalizar_compra:hover{
+.compra:hover, .finalizar_compra:hover{
     scale: 1.1;
 }
 
@@ -80,10 +80,7 @@ body{
 
 .produto:hover .imagem{
     transform: translateY(-8px);
-}
-
-.produto:hover .imagem{
-    scale: 1.1
+    scale: 1.1;
 }
 
 .imagem{
@@ -96,7 +93,22 @@ body{
     height: 15vh;
     background: rgb(64, 64, 64);
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.logo, .user{
+    filter: invert(100%);
+    cursor: pointer;
+    margin: 0px 100px
+}
+
+.logo{
+    height: 12vh;
+}
+
+.user{
+    height: 5vh;
 }
 
 .rodape{
@@ -125,18 +137,6 @@ body{
     height: 25px;
     filter: invert(100%);
     margin: 0px 0px -4px 10px;
-}
-
-.logo{
-    scale: 0.75;
-    filter: invert(100%);
-    cursor: pointer
-}
-
-.user{
-    scale: 0.3;
-    filter: invert(100%);
-    cursor: pointer
 }
 
 .pagina_pagamento{

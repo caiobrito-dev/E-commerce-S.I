@@ -39,6 +39,19 @@ $(document).ready(function(){
 
     ]
 
+    let imagens = {
+        ebook : "/imgs/mil milhoes.png",
+        camisa : "/imgs/flamengo.png",
+        ps5 : "/imgs/ps5.png",
+        meteriorito : "/imgs/meteriorito.png",
+        impala : "/imgs/impala.png",
+        agua : "/imgs/agua.png",
+        bomba : "/imgs/bomba.png",
+        vale : "/imgs/cartao.png",
+        argamassa : "/imgs/argamassa.png",
+        materia : "/imgs/materia escura.png",
+    }
+
     $(".compra").click(function(){
 
         /* Ocultando e visualizando a div */
@@ -53,6 +66,10 @@ $(document).ready(function(){
 
             $("input[name='pagamento']").prop("checked", false);
             $(".escurece").hide()
+
+            $(".imagem_compra img").remove()
+
+        
         }else
             var pagina_escurece = $(".escurece")
             if (pagina_escurece != undefined){
@@ -69,10 +86,13 @@ $(document).ready(function(){
             let nome_produto = nomes[chaves.indexOf(produto_escolhido)]
             let descricao = descriçoes[chaves.indexOf(produto_escolhido)]
             let preco = produtos[produto_escolhido]
-            
+            let imagem_produto = $("<img>")
+            imagem_produto.attr("src", imagens[produto_escolhido])
+            $(".imagem_compra").append(imagem_produto)
 
             $("#nome_produto").text(nome_produto)
             $("#descricao").text(descricao)
+            $(".imagem_compra").append(imagem_produto)
             if(preco != undefined){
                 $("#preco_tela_pagamento").text("Preço: R$ "+preco.toFixed(2))
             }
@@ -88,6 +108,10 @@ $(document).ready(function(){
                     /* PAGAMENTO POR PIX */ 
 
                     if($(".dados_comprador_cartao").is(":visible")){
+                        $("#cvc_cartao").val("")
+                        $("#num_cartao").val("")
+                        $("#validade_cartao").val("")
+                        $("#nome_comprador_cartao").val("")
                         $(".dados_comprador_cartao").hide()
                     }
                     let dados_pix = $(".dados_comprador_pix")
@@ -105,18 +129,22 @@ $(document).ready(function(){
                         }
                     })
 
-                    $("#finalizar_compra").click(function(){
+                    $("#finalizar_compra_pix").click(function(){
                         let cpf = $("#cpf_comprador").val()
-                        if($("#nome_comprador").val() != "" && cpf.length == 14){
+                        if($("#nome_comprador_pix").val() != "" && cpf.length == 14){
                             alert("comprou")
+                            $("#nome_comprador_pix").val("")
+                            $("#cpf_comprador").val("")                     
                         }
                     }) 
                 }
-                else{
+                if (tipo_pagamento == "cartao"){
 
                     /* PAGAMENTO POR CARTAO */ 
 
                     if($(".dados_comprador_pix").is(":visible")){
+                        $("#nome_comprador_pix").val("")
+                        $("#cpf_comprador").val("")
                         $(".dados_comprador_pix").hide()
                     }
                     let dados_cartao = $(".dados_comprador_cartao")
@@ -131,15 +159,35 @@ $(document).ready(function(){
                     $("#parcela_4x").text("4X com juros de: R$ " + (preco/4 + (preco/100 * 3)).toFixed(2)) 
                     $("#parcela_5x").text("5X com juros de: R$ " + (preco/5 + (preco/100 * 3)).toFixed(2)) 
 
+                    $("#num_cartao").on("keyup", function(){
+                        let num = $("#num_cartao").val()
+                        if(num.slice(0,2) > 50 && num.slice(0,2) < 56){
+                            alert("mastercard")
+                        }
+                        if(num[0] == 4){
+                            alert("visa")
+                        }
+                        if (num[0] == 6){
+                            alert("elo")
+                        }
                     
-                    $("#finalizar_compra").click(function(){
+                        
+                    })
+
+                    
+                    $("#finalizar_compra_cartao").click(function(){
                         let cvc = $("#cvc_cartao").val().length
                         let num = $("#num_cartao").val().length
                         let val = $("#validade_cartao").val().length
 
-                        if($("#nome_comprador").val() != "" && cvc == 3 && num == 19 & val == 8){
+                        if($("#nome_comprador_cartao").val() != "" && cvc == 3 && num == 19 && val == 8){
                             alert("comprou")
-                        }
+                            $("#cvc_cartao").val("")
+                            $("#num_cartao").val("")
+                            $("#validade_cartao").val("")
+                            $("#nome_comprador_cartao").val("")                            
+                        }        
+                           
                     }) 
                 }
             })

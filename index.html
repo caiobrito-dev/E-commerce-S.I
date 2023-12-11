@@ -113,13 +113,16 @@
                 <div class="informacoes_pagamento">
                     
                     <div class="dados_comprador_pix">
-                        Nome: <input type="text" placeholder="NOME" id="nome_comprador">
+                        Nome: <input type="text" placeholder="NOME" id="nome_comprador_pix">
                         CPF: <input type="text" name="" id="cpf_comprador" placeholder="CPF">
                         <p id="aviso_cpf"></p>
+                        <div class="finaliza">
+                            <button id="finalizar_compra_pix" class="finalizar_compra">Finalizar compra</button>
+                        </div>
                     </div>
 
                     <div class="dados_comprador_cartao">
-                        Nome: <input type="text" placeholder="NOME" id="nome_comprador">
+                        Nome: <input type="text" placeholder="NOME" id="nome_comprador_cartao">
                         Número cartão <input type="text" placeholder="0000 0000 0000 0000" id="num_cartao">
                         Validade do cartao <input type="text" placeholder="XX/XX/XX" id="validade_cartao">
                         Codigo de segurança <input type="text" placeholder="XXX" id="cvc_cartao">
@@ -130,10 +133,11 @@
                             <option value="" id="parcela_4x"></option>
                             <option value="" id="parcela_5x"></option>
                         </select>
+                        <div class="finaliza">
+                            <button id="finalizar_compra_cartao" class="finalizar_compra">Finalizar compra</button>
+                        </div>
                     </div>
-                    <div class="finaliza">
-                        <button id="finalizar_compra">Finalizar compra</button>
-                    </div>
+                    
                 </div>
                 
             </div>
